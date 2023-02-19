@@ -1,0 +1,72 @@
+wild card character %, _
+
+SELECT, WHERE
+ORDER BY clause  -- sorting asc, desc
+
+Agggregate functions:
+- count() 
+- avg()  - numerical
+- sum()  - numerical
+- max()
+- min()
+
+Product table:
+- prodId char(4)  eg '1001', 'A101', "MS02", 'SSS ', 'SS203'
+- pname varchar2(20)  eg 'Oil rings', 'ms',
+- qoh number(5) eg 10, 1500, 90000, 99999, 100000XX
+- price number(7,2)  : 5 fig no, 2 dec places
+- date 
+
+
+number(precision, scale)
+number(5,2)  - 1.1, 10.12, 101.11 
+
+
+
+create table bankaccount (
+   accId number(4) PRIMARY KEY, 
+   accName varchar2(20) NOT NULL,
+   type varchar2(10),
+   bal number(8,2),
+   doc date
+);
+   
+create table banktransaction(
+    transId number(5) ,
+    type varchar2(10),
+    acctId number(4) references bankaccount(accId),
+    dot   date
+)
+
+DDL - create, alter, drop
+
+CREATE TABLE <TABLE-NAME>
+
+CREATE SEQUENCE <SEQ-NAME>
+EG - CREATE SEQUENCE empseq;
+start - 1
+incr - 1
+
+
+DML - INSERT, DELETE, UPDATE
+
+Transaction - all or nothing op
+
+
+
+transferFunds(srcacct, tgtacct, amount){
+
+   srcacct : bal = bal - amount;  (update account set bal = ...)
+   tgtacct : bal = bal + amount;
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+Class is a template/blueprint
+Objects: instances of classes
+
+instantiate a class -> get a Object
+
+Encapsulation : hiding of data + behavior
+
+Abstraction : retain what is essential, throw out what isnt!
+
+hardware platform = OS + processor
+windows + Intel
+Linux + AMD
+
+Java - create, compile and execute Java prg:
+1) use command prompt (javac, java)
+2) use IDE:  Eclipse, Intellij, Netbeans
+
+
+
+op1  +  op2
+2 + 2 = 4
+"the sum is " + sum -> the sum is 30
+
+C: scanf()
+C++ : cin
+python : input()
+Java : XXXX
+
+Java 5 : Scanner
+
+Rules:
+- Java class : Noun, Start with Capital
+   Box, BookManager
+
+
+Constructor:
+- method : name of cons same as class
+- cons cannot return anything, not even void
+- Java by def provides the def noarg cons; But if i provide even one cons of my own, java stops giving teh def noarg cons 
+
+Java system : default no-argument cons (def noarg cons)
+
+public Box(){
+
+}
+
+parameterized cons  Box(parameters)
+
+
+
+
+
+
+
+
+
